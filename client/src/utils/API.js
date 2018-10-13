@@ -1,5 +1,6 @@
 import axios from "axios";
-var nytAPIKEY = "abfda96b313848ad975837fbc8f1e9f6";
+var nytAPIKEY = "475ba28ce8bf4a4883a197c21eb6fac3";
+
 var nytURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
 export default {
@@ -20,7 +21,6 @@ export default {
   },
   // Saves a articles to the database
   saveArticle: function(articleData) {
-    // console.log(articleData);
     return axios.post("/api/articles", articleData);
   }
 };
